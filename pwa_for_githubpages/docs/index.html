@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#0B84FF"/>
+  <link rel="manifest" href="manifest.webmanifest"/>
+  <title>PWA Exemplo</title>
+</head>
+<body>
+  <h1>PWA publicado no GitHub Pages</h1>
+  <p>Se você está vendo isso, o PWA está funcionando!</p>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js').catch(console.error);
+    }
+  </script>
+</body>
+</html>
